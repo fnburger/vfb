@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css" type="text/css">
+        <script>
+            function show(){
+                document.getElementById("name").innerHTML = 
+                        "Honda Varadero XL 1000 SD02";
+                document.getElementById("sonstiges").innerHTML = 
+                        "kein ABS, manuelles Getriebe";
+                document.getElementById("vara").style.display = "inline";
+                document.getElementById("knopf1").style.display = "none";
+            }
+        </script>
+        <title>VFB</title>
+    </head>
+    <body>
+        <div class="header">
+            <a href="index.html">VFB Biketouren</a>
+        </div>
+        <nav>
+            <a href="touren.html" class="current">Biketouren</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="angebote.html">Angebote & Preise</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="buchen.html">Buchen</a>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <a href="kontakt.html">Kontakt</a>
+        </nav>
+        <div class="row">
+            <div class="col-3 col-m-3">
+                <h4>Mehr Informationen</h4>
+                <p><small>&blacktriangleright; <a href="touren.html">Was sind Biketouren?</a></small></p>
+                <p><small>&blacktriangleright; <a href="angebote.html">Angebote</a></small></p>
+                <p><small>&blacktriangleright; <a href="buchen.html">Sie wollen buchen?</a></small></p>
+            </div>
+            <div class="col-6 col-m-6">
+                <h2>Biketouren mit Guide</h2>
+                <p>Der Tourguide f&auml;hrt voraus.</p>
+                <p>Die Geschwindigkeit wird entsprechend der witterlichen Bedingungen und den Bestimmungen der Straßenverkehrsordnung angepasst.</p>
+                <p>Es wird ausdr&uuml;cklich auf die Gefahren im Wald, bei N&auml;sse und bei Schleuder- und Sturzgefahr hingewiesen.</p>
+                <br><div class="knopf"><button type="button" onclick="show();" id="knopf1">Infos zum Motorrad</button></div>
+                <br><h4 id="name"></h4><p id="sonstiges"></p>
+                <img src="../img/varadero.jpeg" class="pics" style="display: none;" id="vara">
+            </div>
+            <div class="col-3 col-m-3">
+                <h4>Kontakt</h4>
+                <p>&blacktriangleright; <small><a href="buchen.html">Sie haben Interesse?</a></small></p>
+                <p>&blacktriangleright; <small><a href="kontakt.html">Sie haben Fragen?</a></small></p>
+            </div>
+        </div>
+        <div class="footer">
+            <p style="text-align: right; color: white;"><small>Webmaster: <a href="mailto:konsti.burger@gmail.com">E-Mail</a></small></p>
+        </div>
+    </body>
+</html>
